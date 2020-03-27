@@ -6,20 +6,17 @@
 <hr>
 
 <p align="center">
-  <a href="https://travis-ci.org/dollarshaveclub/scrolldir/">
-    <img alt="Build Status" src="https://travis-ci.org/dollarshaveclub/scrolldir.svg?branch=master" />
-  </a>
   <a href="https://cdnjs.com/libraries/scrolldir">
     <img alt="CDNJS" src="https://img.shields.io/cdnjs/v/scrolldir.svg" />
   </a>
-  <a href="https://greenkeeper.io/">
-    <img alt="Greenkeeper" src="https://badges.greenkeeper.io/dollarshaveclub/scrolldir.svg" />
+  <a href="https://unpkg.com/scrolldir@latest/dist/scrolldir.min.js">
+    <img alt="unpkg" src="https://img.shields.io/badge/unpkg-link-blue.svg">
+  </a>
+  <a href="https://snyk.io/test/github/yowainwright/scrolldir">
+    <img alt="snyk" src="https://snyk.io/test/github/yowainwright/scrolldir/badge.svg" />
   </a>
   <a href="https://www.npmjs.com/package/scrolldir">
     <img alt="npm version" src="https://badge.fury.io/js/scrolldir.svg" />
-  </a>
-  <a href="https://github.com/dollarshaveclub/scrolldir">
-    <img alt="Bower version" src="https://badge.fury.io/bo/scrolldir.svg" />
   </a>
   <a href="https://twitter.com/home?status=ScrollDir%2C%20a%20micro%20JS%20lib%20that%20describes%20vertical%20scroll%20direction.%20https%3A%2F%2Fgithub.com%2Fdollarshaveclub%2Fscrolldir%20by%20%40pfisher42%20co%20%40yowainwright%20%40DSCEngineering">
     <img alt="Share on Twitter" src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social&maxAge=2592000" />
@@ -34,9 +31,9 @@ ScrollDir, short for Scroll Direction, is a 0 dependency, ~1kb micro Javascript 
 
 ### ScrollDir is perfect for:
 
--  showing or hiding sticky elements based on scroll direction 🐥
--  only changing its direction attribute when scrolled a significant amount 🔥
--  **ignoring small scroll movements** that cause unwanted jitters 😎
+- showing or hiding sticky elements based on scroll direction 🐥
+- only changing its direction attribute when scrolled a significant amount 🔥
+- **ignoring small scroll movements** that cause unwanted jitters 😎
 
 <hr>
 
@@ -45,17 +42,21 @@ ScrollDir, short for Scroll Direction, is a 0 dependency, ~1kb micro Javascript 
 ScrollDir will set the `data-scrolldir` attribute on the `<html>` element to `up` or `down`:
 
 ```html
-<html data-scrolldir="up">
+<html data-scrolldir="up"></html>
 ```
+
 or
+
 ```html
-<html data-scrolldir="down">
+<html data-scrolldir="down"></html>
 ```
 
 Now it’s easy to change styles based on the direction the user is scrolling!
 
 ```css
-[data-scrolldir="down"] .my-fixed-header { display: none; }
+[data-scrolldir="down"] .my-fixed-header {
+  display: none;
+}
 ```
 
 ## In Action 🎥
@@ -71,14 +72,19 @@ Now it’s easy to change styles based on the direction the user is scrolling!
 ## Install 📦
 
 npm
+
 ```sh
 npm install scrolldir --save
 ```
+
 bower
+
 ```sh
 bower install scrolldir --save
 ```
+
 yarn
+
 ```sh
 yarn add scrolldir
 ```
@@ -86,11 +92,13 @@ yarn add scrolldir
 ## Setup 📤
 
 ### Easy Mode
+
 Add **dist/scrolldir.auto.min.js** and you’re done. There is nothing more to do! Scrolldir will **just work**.
 
 Now go write some styles using `[data-scrolldir="down"]` and `[data-scrolldir="up"]`.
 
 ### Custom Mode 🛠
+
 Add **dist/scrolldir.min.js**. You have access to the API options below and must invoke scrollDir.
 
 ```javascript
@@ -98,26 +106,31 @@ scrollDir();
 ```
 
 To use an attribute besides `data-scrolldir`:
+
 ```javascript
-scrollDir({ attribute: 'new-attribute-name' });
+scrollDir({ attribute: "new-attribute-name" });
 ```
 
 To add the Scrolldir attribute to a different element:
+
 ```javascript
-scrollDir({ el: 'your-new-selector' });
+scrollDir({ el: "your-new-selector" });
 ```
 
 To turn Scrolldir off:
+
 ```javascript
 scrollDir({ off: true });
 ```
 
 To turn provide a different scroll direction on page load (or app start):
+
 ```javascript
-scrollDir({ dir: 'up' }); // the default is 'down'
+scrollDir({ dir: "up" }); // the default is 'down'
 ```
 
 To change the `thresholdPixels`—the number of pixels to scroll before re-evaluating the direction:
+
 ```javascript
 scrollDir({ thresholdPixels: someNumber }); // the default is 64 pixels
 // example: scrollDir({ thresholdPixels: 10 })

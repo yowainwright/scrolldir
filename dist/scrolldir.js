@@ -1,7 +1,7 @@
 /**
   scrolldir - Vertical scroll direction in CSS
-  @version v1.5.0
-  @link https://github.com/dollarshaveclub/scrolldir.git
+  @version v1.5.1
+  @link https://github.com/yowainwright/scrolldir.git
   @author Patrick Fisher <patrick@pwfisher.com>
   @license MIT
 **/
@@ -9,7 +9,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = global || self, global.scrollDir = factory());
-}(this, function () { 'use strict';
+}(this, (function () { 'use strict';
 
   var attribute = 'data-scrolldir';
   var dir = 'down'; // 'up' or 'down'
@@ -105,4 +105,4 @@
 
   return scrollDir;
 
-}));
+})));
