@@ -1,6 +1,6 @@
 {
   "name": "scrolldir",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Vertical scroll direction in CSS",
   "main": "dist/scrolldir.js",
   "module": "dist/scrolldir.es.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dollarshaveclub/scrolldir.git"
+    "url": "git+https://github.com/yowainwright/scrolldir.git"
   },
   "keywords": [
     "jquery",
@@ -29,9 +29,9 @@
   "author": "Patrick Fisher <patrick@pwfisher.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dollarshaveclub/scrolldir.git/issues"
+    "url": "https://github.com/yowainwright/scrolldir.git/issues"
   },
-  "homepage": "https://github.com/dollarshaveclub/scrolldir.git",
+  "homepage": "https://github.com/yowainwright/scrolldir.git",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
