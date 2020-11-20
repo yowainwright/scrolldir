@@ -1,8 +1,8 @@
 /**
   scrolldir - Vertical scroll direction in CSS
-  @version v1.5.1
+  @version v1.5.2
   @link https://github.com/yowainwright/scrolldir.git
-  @author Patrick Fisher <patrick@pwfisher.com>
+  @author Patrick Fisher <patrick@pwfisher.com>, Jeffry Wainwright <yowainwright@gmail.com>
   @license MIT
 **/
 (function (global, factory) {

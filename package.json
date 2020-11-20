@@ -1,6 +1,6 @@
 {
   "name": "scrolldir",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Vertical scroll direction in CSS",
   "main": "dist/scrolldir.js",
   "module": "dist/scrolldir.es.js",
@@ -26,7 +26,7 @@
     "javascript",
     "window"
   ],
-  "author": "Patrick Fisher <patrick@pwfisher.com>",
+  "author": "Patrick Fisher <patrick@pwfisher.com>, Jeffry Wainwright <yowainwright@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yowainwright/scrolldir.git/issues"
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
-    "bower": "^1.7.9",
+    "@heartly/eslint-config": "^0.0.2",
     "es-check": "^5.0.0",
     "eslint": "^6.0.0",
     "node-qunit-phantomjs": "^2.0.0",
@@ -44,5 +44,6 @@
     "rollup-plugin-babel": "^4.0.0-beta.0",
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^6.0.0"
-  }
+  },
+  "prettier": "@heartly/eslint-config/dist/prettier"
 }
