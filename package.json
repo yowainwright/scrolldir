@@ -10,7 +10,7 @@
     "build": "rollup --config rollup.config.mjs",
     "lint": "eslint src/*.js --fix",
     "prepublishOnly": "yarn build",
-    "test": "yarn test:acceptance && yarn test:es-check",
+    "test": "yarn build && yarn test:acceptance && yarn test:es-check",
     "test:acceptance": "node ./scripts/run-tests.js",
     "test:es-check": "es-check es5 dist/scrolldir.auto.js dist/scrolldir.js dist/scrolldir.min.js dist/scrolldir.auto.min.js",
     "update": "codependence --update"
