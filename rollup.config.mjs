@@ -6,7 +6,8 @@ import babel from 'rollup-plugin-babel'
 import replace from 'rollup-plugin-replace'
 import { uglify } from 'rollup-plugin-uglify'
 
-import {
+import pkg from './package.json' assert { type: "json" }
+const {
   author,
   description,
   homepage,
@@ -15,7 +16,7 @@ import {
   module,
   name,
   version,
-} from './package.json'
+} = pkg
 
 const loose = true
 
@@ -104,4 +105,3 @@ export default [
     env: 'production',
   }),
 ]
-

@@ -5,13 +5,15 @@
   "main": "dist/scrolldir.js",
   "module": "dist/scrolldir.es.js",
   "unpkg": "dist/scrolldir.min.js",
+  "type": "module",
   "scripts": {
-    "test": "npm run test:acceptance && npm run test:es-check",
+    "build": "rollup --config rollup.config.mjs",
+    "lint": "eslint src/*.js --fix",
+    "prepublishOnly": "yarn build",
+    "test": "yarn build && yarn test:acceptance && yarn test:es-check",
     "test:acceptance": "node ./scripts/run-tests.js",
     "test:es-check": "es-check es5 dist/scrolldir.auto.js dist/scrolldir.js dist/scrolldir.min.js dist/scrolldir.auto.min.js",
-    "build": "rollup --config rollup.config.js",
-    "lint": "eslint src/*.js --fix",
-    "postpublish": "git tag $npm_package_version && git push origin --tags"
+    "update": "codependence --update"
   },
   "repository": {
     "type": "git",
@@ -33,19 +35,25 @@
   },
   "homepage": "https://github.com/yowainwright/scrolldir.git",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.46",
-    "@babel/preset-env": "^7.0.0-beta.46",
-    "es-check": "^7.0.1",
-    "eslint": "^8.25.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "node-qunit-phantomjs": "^2.0.0",
-    "prettier": "^2.7.1",
-    "qunit": "^2.6.2",
-    "rollup": "^2.35.1",
-    "rollup-plugin-babel": "^4.0.0-beta.0",
-    "rollup-plugin-replace": "^2.0.0",
-    "rollup-plugin-uglify": "^6.0.0"
+    "@babel/core": "7.20.12",
+    "@babel/preset-env": "7.20.2",
+    "codependence": "^0.2.6",
+    "es-check": "7.1.0",
+    "eslint": "8.34.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-import": "2.27.5",
+    "node-qunit-phantomjs": "2.1.1",
+    "prettier": "2.8.4",
+    "qunit": "2.19.4",
+    "rollup": "3.15.0",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-replace": "2.2.0",
+    "rollup-plugin-uglify": "6.0.4"
   },
-  "prettier": "@heartly/eslint-config/dist/prettier"
+  "prettier": "@heartly/eslint-config/dist/prettier",
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v%s"
+    }
+  }
 }
