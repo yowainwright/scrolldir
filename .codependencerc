@@ -1,0 +1,18 @@
+{
+  "codependencies": [
+    "@babel/core",
+    "@babel/preset-env",
+    "codependence",
+    "es-check",
+    "eslint",
+    "eslint-config-prettier",
+    "eslint-plugin-import",
+    "node-qunit-phantomjs",
+    "prettier",
+    "qunit",
+    "rollup",
+    "rollup-plugin-babel",
+    "rollup-plugin-replace",
+    "rollup-plugin-uglify"
+  ]
+}
