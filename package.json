@@ -38,7 +38,7 @@
     "@babel/core": "7.21.3",
     "@babel/preset-env": "7.20.2",
     "codependence": "^0.2.6",
-    "es-check": "7.1.0",
+    "es-check": "7.1.1",
     "eslint": "8.37.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
