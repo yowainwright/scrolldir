@@ -3267,10 +3267,10 @@ qunit-reporter-junit@^1.1.1:
   resolved "https://registry.yarnpkg.com/qunit-reporter-junit/-/qunit-reporter-junit-1.1.1.tgz#eeb6226457896993e795a11940f18af6afa579b4"
   integrity sha1-7rYiZFeJaZPnlaEZQPGK9q+lebQ=
 
-qunit@2.19.4:
-  version "2.19.4"
-  resolved "https://registry.yarnpkg.com/qunit/-/qunit-2.19.4.tgz#2d689bb1165edd4b812e3ed2ee06ff907e9f2ece"
-  integrity sha512-aqUzzUeCqlleWYKlpgfdHHw9C6KxkB9H3wNfiBg5yHqQMzy0xw/pbCRHYFkjl8MsP/t8qkTQE+JTYL71azgiew==
+qunit@2.20.0:
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/qunit/-/qunit-2.20.0.tgz#66a404a0142781316bbda91535869ce5671555b1"
+  integrity sha512-N8Fp1J55waE+QG1KwX2LOyqulZUToRrrPBqDOfYfuAMkEglFL15uwvmH1P4Tq/omQ/mGbBI8PEB3PhIfvUb+jg==
   dependencies:
     commander "7.2.0"
     node-watch "0.7.3"
