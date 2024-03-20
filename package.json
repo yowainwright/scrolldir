@@ -43,7 +43,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
     "node-qunit-phantomjs": "2.1.1",
-    "prettier": "3.1.1",
+    "prettier": "3.2.5",
     "qunit": "2.20.1",
     "rollup": "4.12.1",
     "rollup-plugin-babel": "4.4.0",
