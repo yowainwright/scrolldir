@@ -36,7 +36,7 @@
   "homepage": "https://github.com/yowainwright/scrolldir.git",
   "devDependencies": {
     "@babel/core": "7.24.3",
-    "@babel/preset-env": "7.23.3",
+    "@babel/preset-env": "7.24.4",
     "codependence": "^0.2.6",
     "es-check": "7.1.1",
     "eslint": "8.57.0",
