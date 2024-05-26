@@ -37,7 +37,7 @@
   "devDependencies": {
     "@babel/core": "7.24.6",
     "@babel/preset-env": "7.24.5",
-    "codependence": "^0.2.6",
+    "codependence": "^0.3.0",
     "es-check": "7.1.1",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
