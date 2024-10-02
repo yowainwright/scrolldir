@@ -39,7 +39,7 @@
     "@babel/preset-env": "7.25.4",
     "codependence": "^0.2.6",
     "es-check": "7.2.1",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
     "node-qunit-phantomjs": "2.1.1",
