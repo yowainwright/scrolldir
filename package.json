@@ -44,7 +44,7 @@
     "eslint-plugin-import": "2.29.1",
     "node-qunit-phantomjs": "2.1.1",
     "prettier": "3.3.3",
-    "qunit": "2.22.0",
+    "qunit": "2.23.1",
     "rollup": "4.24.2",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-replace": "2.2.0",
